@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WkndMVP</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/flipclock.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="contain-to-grid sticky" data-magellan-expedition="sticky">
+
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section>
+          <ul class="right nav-container">
+            <li>
+              <div class="nav-links">
+                <a href="#about-section" data-magellan-arrival="about-section">ABOUT</a> :
+                <a href="#ehackathon-section" data-magellan-arrival="ehackathon-section">eHACKATHON</a> :
+                <a href="#showcase-section" data-magellan-arrival="showcase-section">SHOWCASE</a> :
+                <a href="#contact-section" data-magellan-arrival="contact-section">CONTACT</a>
+                <!-- <a href="#">BLOG</a> :
+                <a href="#" class="red-copy">REGISTER NOW</a> -->
+              </div>
+            </li>
+            <li>
+              <div id="count-dwn-clk">
+                <span class="count-dwn-num" id="count-dwn-num-01">0</span>
+                <span class="count-dwn-num" id="count-dwn-num-02">0</span>
+                <span class="count-dwn-num" id="count-dwn-num-03">0</span>
+                <span class="count-dwn-num" id="count-dwn-num-04">0</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="left">
+            <li><a href="#start"><img src="imgs/wknd-logo-small.png" class="wknd-logo"></a></li>
+          </ul>
+        </section>
+      </nav>
+
+    </div>
+    <div class="row landing-hero" id="start">
+      <div class="small-12 columns">
+        <div class="content-container">
+          <h1>Join the WkndMVP eHackathon</h1>
+          <h2>Hacking starts: <span class="red-copy">Thurs Aug 2 @ 12:00 PST</span></h2>
+          <h3>Register your team today</h3>
+          <div class="countdown-timer"></div>
+          <a href="#ehackathon-section" class="button large">Register Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="row landing-callout" id="about-section" data-magellan-destination="about-section">
+      <div class="small-12 columns">
+        <h2 class="landing-callout-copy">About WkndMVP</h2>
+      </div>
+    </div>
+    <div class="row landing-categories cat-bkg01">
+      <div class="small-12 medium-7 columns">
+        <h3>A Community for Makers</h3>
+        <p>WkndMVP is a community for makers that was founded by the r/startup Reddit community. WkndMVP is about bringing our complementary skills together over the weekends to do what we love - create new, smart things.</p>
+      </div>
+    </div>
+    <div class="row landing-callout" id="ehackathon-section" data-magellan-destination="ehackathon-section">
+      <div class="small-12 columns">
+        <h2 class="landing-callout-copy">eHackathon</h2>
+      </div>
+    </div>
+    <div class="row landing-categories cat-bkg02">
+      <div class="small-12 medium-7 columns">
+        <h3>How to Participate </h3>
+        <ol>
+          <li>Find teammates in the /weekendMVP subreddit</li>
+          <li>Register your team before <span class="red-copy bold-copy">Thurs Aug 2 @ 12:00 PST</span>.</li>
+        </ol>
+        <h3>Team Registration </h3>
+        <form data-abide>
+          <div class="team-name-field">
+            <label>Your Team Name <small>required</small>
+              <input type="text" required pattern="[a-zA-Z]+">
+            </label>
+            <small class="error">Team name is required.</small>
+          </div>
+          <div class="email-field">
+            <label>Contact Email <small>required</small>
+              <input type="email" required>
+            </label>
+            <small class="error">An email address is required.</small>
+          </div>
+          <div class="member-field">
+            <label>Team Lead <small>required</small>
+              <input type="text" required pattern="[a-zA-Z]+">
+            </label>
+            <small class="error">Name is required.</small>
+          </div>
+          <!-- <div class="member-field">
+            <label>Team Member <small>required</small>
+              <input type="text" required pattern="[a-zA-Z]+">
+            </label>
+            <small class="error">Name is required.</small>
+          </div>
+          <div class="member-field">
+            <label>Team Member <small>required</small>
+              <input type="text" required pattern="[a-zA-Z]+">
+            </label>
+            <small class="error">Name is required.</small>
+          </div> -->
+          <label>Choose a Category
+            <select>
+              <option value="overall">Best Overall</option>
+              <option value="mobile">Best Mobile</option>
+              <option value="internet">Best Internet of Things</option>
+              <option value="ux">Best UX</option>
+              <option value="api">Best use of an API</option>
+            </select>
+          </label>
+          <label>Project Description
+            <textarea></textarea>
+          </label>
+          <button type="submit">Submit</button>&nbsp;<button type="reset">Reset</button>
+        </form>
+        <h3>Date &amp; Duration</h3>
+        <p>The eHackathon starts:<p>
+        <p class="red-copy bold-copy">Thurs Aug 2 @ 12:00 PST &amp; runs until Sun, Aug 23 @ 23:59 PST</p>
+        <p>Submission must be entered online no later than <span class="red-copy bold-copy">Sun, Aug 23 @ 23:59 PST</span>.</p>
+        <h3>Submission</h3>
+        <p>Team leaders log in at wkndmvp.com and submit your team project before the deadline <span class="red-copy bold-copy">Sun, Aug 23 @ 23:59 PST.</span></p>
+        <h3>Voting</h3>
+        <ol>
+          <li>After the eHackathon deadline Community reviews submissions &amp; choose best of or 1/2/3 for each category.</li>
+          <li>1 week for community to vote</li>
+          <li>Voters sign in with reddit to cast vote, 1 vote per username per category? </li>
+          <li>Voters cannot vote on their own project</li>
+          <li>Account must be 1 week old from the start of hackathon</li>
+          <li>Account must belong to r startups subreddit</li>
+        </ol>
+        </div>
+        <div class="small-8 medium-6 columns">
+        <h3>Categories</h3>
+        <p>Below is a list of the categories to inspire your ideas. If our community is able to gain enough traction that we attract sponsors for the WkndMVP eHackathon, we hope to provide prizes for the following categories. At minimum, your team could win all the fame, glory and bragging rights for the categories below. </p>
+
+        <p>Voting will open after the eHackathon deadline on Sun, Aug 23 @ 23:59 PST. </p>
+
+        <p>Voting is open to members of the r/startups Reddit community. Login on Mon, Aug 25th to cast your vote for the best of the best in each category. </p>
+      </div>
+      <div class="small-8 medium-6 columns">
+        <ul class="category-list">
+          <li><img src="imgs/blue-3dpolybox.png"> Best Overall</li>
+          <li><img src="imgs/red-3dpolybox.png"> Best Mobile</li>
+          <li><img src="imgs/blue-3dpolybox.png"> Best Internet of Things</li>
+          <li><img src="imgs/red-3dpolybox.png"> Best UX</li>
+          <li><img src="imgs/blue-3dpolybox.png"> Best use of an API</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row landing-callout" id="showcase-section" data-magellan-destination="showcase-section">
+      <div class="small-12 columns">
+        <h2 class="landing-callout-copy">Showcase</h2>
+      </div>
+    </div>
+    <div class="row landing-categories cat-bkg03">
+      <div class="small-12 medium-7 columns">
+        <h3>Coming soon!</h3>
+        <p>Check back on August 25th,2015 to cast your vote for the best projects in each category.</p>
+      </div>
+    </div>
+
+    <div class="row landing-callout" id="contact-section" data-magellan-destination="contact-section">
+      <div class="small-12 columns">
+        <h2 class="landing-callout-copy">Contact WkndMVP</h2>
+      </div>
+    </div>
+    <div class="row landing-categories cat-bkg04">
+      <div class="small-12 medium-7 columns">
+        <form data-abide>
+          <div class="team-name-field">
+            <label>Name <small>required</small>
+              <input type="text" required pattern="[a-zA-Z]+">
+            </label>
+            <small class="error">Name is required.</small>
+          </div>
+          <div class="email-field">
+            <label>Email <small>required</small>
+              <input type="email" required>
+            </label>
+            <small class="error">An email address is required.</small>
+          </div>
+          <div class="member-field">
+            <label>Company
+              <input type="text">
+            </label>
+          </div>
+          <label>What's up?
+            <textarea></textarea>
+          </label>
+          <button type="submit">Submit</button>&nbsp;<button type="reset">Reset</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- <div class="row footer">
+      <div class="small-12 columns"></div>
+    </div> -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
